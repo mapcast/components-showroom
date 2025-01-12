@@ -1,0 +1,527 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><link rel="stylesheet" href="/components-showroom/_next/static/css/c914d24e71ef522e.css?v=1736666478585" data-precedence="next_static/css/c914d24e71ef522e.css"/><link rel="stylesheet" href="/components-showroom/_next/static/css/62363754e11d4720.css?v=1736666478585" data-precedence="next_static/css/62363754e11d4720.css"/><link rel="preload" href="/components-showroom/_next/static/chunks/webpack-9a66635e0ebcbac3.js?v=1736666478585" as="script"/><link rel="preload" href="/components-showroom/_next/static/chunks/fd9d1056-2a48348db6e9e5e0.js?v=1736666478585" as="script"/><link rel="preload" href="/components-showroom/_next/static/chunks/596-800aeab03192c083.js?v=1736666478585" as="script"/><link rel="preload" href="/components-showroom/_next/static/chunks/main-app-d9ec4e7880384bc3.js?v=1736666478585" as="script"/><title>Component Showroom</title><meta name="description" content="next app"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="icon" href="/components-showroom/favicon.ico" type="image/x-icon" sizes="16x16"/><script src="/components-showroom/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js" noModule=""></script></head><body><div style="width:100vw;height:100vh;background:#FFF;min-width:100vw;min-height:100vh;overflow:auto" class="__className_d617c8"><div style="position:fixed;left:10px;top:10px;display:flex;gap:10px"><div></div><div></div><div></div></div><div style="position:fixed;left:50%;top:15px"><button style="color:rgb(195,128,250);font-size:16px;cursor:pointer;transition:all 0.5s;background:transparent;border:none;outline:none">to home</button></div><div style="position:fixed;right:10px;top:10px;display:flex;gap:10px"><div></div><div></div></div><div></div><div style="padding:50px 10px 10px 10px;height:100vh" class="__className_d617c8"><div style="width:100%;height:100%;display:flex;justify-content:center;align-items:center"><div class="slight-scroll" style="box-shadow:0 0 15px 0 rgba(195,128,250,0.3);width:100%;height:100%;padding:10px;overflow-y:auto"><div style="display:flex;gap:10px"><h4 style="font-size:18px;padding-bottom:10px;font-weight:800;color:rgb(135,64,186);text-transform:capitalize">HSTable</h4></div><div style="height:calc(100% - 36px)"><p style="padding-bottom:10px;font-size:14px;color:rgb(135,64,186)">table component with variety of features.</p><div style="padding:10px 0 30px 0"><div style="width:100%;height:1px" class="hs-devider-vertical"><style>
+        .hs-devider-vertical {
+          background-image: linear-gradient(to right, rgb(195,128,250), rgba(243,182,248, 0.5));
+        }
+        .hs-devider-horizontal {
+          background-image: linear-gradient(to bottom, rgb(195,128,250), rgba(243,182,248, 0.5));
+        }
+      </style></div></div><div style="padding:0 10px"><h4 style="font-size:18px;padding-bottom:10px;font-weight:800;color:rgb(135,64,186);text-transform:capitalize">Parameters</h4></div><div style="padding:10px 10px 0 10px"><table style="width:950px"><thead><tr style="background:transparent;border-bottom:1px groove rgb(243,182,248)"><th class="" style="width:150px;cursor:default"><div style="display:flex"><div style="padding:2px 0"><span style="cursor:default">Param</span></div><div style="width:20px;height:20px"></div></div></th><th class="" style="width:150px;cursor:default"><div style="display:flex"><div style="padding:2px 0"><span style="cursor:default">Type</span></div><div style="width:20px;height:20px"></div></div></th><th class="" style="width:100px;cursor:default"><div style="display:flex"><div style="padding:2px 0"><span style="cursor:default">Required</span></div><div style="width:20px;height:20px"></div></div></th><th class="" style="width:600px;cursor:default"><div style="display:flex"><div style="padding:2px 0"><span style="cursor:default">Description</span></div><div style="width:20px;height:20px"></div></div></th></tr></thead><tbody><tr style="background:rgba(195,128,250,0.05)"><td class="" style="cursor:default">headers</td><td class="" style="cursor:default">Object[]</td><td class="" style="cursor:default">true</td><td class="" style="cursor:default">{raw: string, type: string, clickable: boolean, display: string}</td></tr><tr style="background:rgba(195,128,250,0.15)"><td class="" style="cursor:default">list</td><td class="" style="cursor:default">Object[]</td><td class="" style="cursor:default">true</td><td class="" style="cursor:default">Put in an array of structs that match the headers you defined.</td></tr><tr style="background:rgba(195,128,250,0.05)"><td class="" style="cursor:default">width</td><td class="" style="cursor:default">string | number</td><td class="" style="cursor:default">false</td><td class="" style="cursor:default">table width.</td></tr><tr style="background:rgba(195,128,250,0.15)"><td class="" style="cursor:default">rowWidths</td><td class="" style="cursor:default">(string | number)[]</td><td class="" style="cursor:default">false</td><td class="" style="cursor:default">inidividual row widths.</td></tr><tr style="background:rgba(195,128,250,0.05)"><td class="" style="cursor:default">handleClickData</td><td class="" style="cursor:default">number</td><td class="" style="cursor:default">false</td><td class="" style="cursor:default">if provided, row is turn to clickable.</td></tr><tr style="background:rgba(195,128,250,0.15)"><td class="" style="cursor:default">handleSort</td><td class="" style="cursor:default">func</td><td class="" style="cursor:default">false</td><td class="" style="cursor:default">if provided, sort is turn to available.</td></tr><tr style="background:rgba(195,128,250,0.05)"><td class="" style="cursor:default">loading</td><td class="" style="cursor:default">boolean</td><td class="" style="cursor:default">false</td><td class="" style="cursor:default">if true, table body turn to loading mode.</td></tr><tr style="background:rgba(195,128,250,0.15)"><td class="" style="cursor:default">theme</td><td class="" style="cursor:default">&#x27;blue&#x27; | &#x27;green&#x27;</td><td class="" style="cursor:default">false</td><td class="" style="cursor:default">color theme. If not provided, set as default.</td></tr></tbody><style>
+        table {
+          border-spacing: 0px;
+          border-style: none;
+          border-collapse: collapse;
+          padding: 0px;
+          table-layout: fixed;
+          text-overflow:ellipsis; 
+          overflow:hidden; 
+          white-space:nowrap;
+          box-shadow: 0 0 5px 0 rgba(195,128,250,0.5);
+        }
+        th {
+          border-spacing: 0px;
+          border-style: none;
+          text-overflow:ellipsis; 
+          overflow:hidden; 
+          white-space:nowrap;
+          padding: 8px 10px;
+          fontWeight: 800;
+          color: rgb(135,64,186);
+          text-align: left;
+          font-size: 16px;
+          transition: all 0.3s ease;
+        }
+        td {
+          border-spacing: 0px;
+          color: rgb(135,64,186);
+          border-style: none;
+          text-overflow:ellipsis; 
+          overflow:hidden; 
+          white-space: nowrap;
+          padding: 5px 10px;
+          transition: all 0.3s ease;
+        }
+        .clickable:hover {
+          color: rgb(195,128,250);
+        }
+      </style></table></div><div style="padding:30px 0"><div style="width:100%;height:1px" class="hs-devider-vertical"><style>
+        .hs-devider-vertical {
+          background-image: linear-gradient(to right, rgb(195,128,250), rgba(243,182,248, 0.5));
+        }
+        .hs-devider-horizontal {
+          background-image: linear-gradient(to bottom, rgb(195,128,250), rgba(243,182,248, 0.5));
+        }
+      </style></div></div><div style="padding:0 10px"><h4 style="font-size:18px;padding-bottom:10px;font-weight:800;color:rgb(135,64,186);text-transform:capitalize">Examples</h4></div><div style="width:1000px;height:320px;display:flex;justify-content:center;align-items:center"><table style="width:1000px"><thead><tr style="background:transparent;border-bottom:1px groove rgb(243,182,248)"><th class="clickable" style="width:150px;cursor:pointer"><div style="display:flex"><div style="padding:2px 0"><span style="cursor:pointer">Birthday</span></div><div style="width:20px;height:20px"></div></div></th><th class="clickable" style="width:150px;cursor:pointer"><div style="display:flex"><div style="padding:2px 0"><span style="cursor:pointer">Name</span></div><div style="width:20px;height:20px"></div></div></th><th class="clickable" style="width:100px;cursor:pointer"><div style="display:flex"><div style="padding:2px 0"><span style="cursor:pointer">Price</span></div><div style="width:20px;height:20px"></div></div></th><th class="clickable" style="width:600px;cursor:pointer"><div style="display:flex"><div style="padding:2px 0"><span style="cursor:pointer">Phone</span></div><div style="width:20px;height:20px"></div></div></th><th class="clickable" style="cursor:pointer"><div style="display:flex"><div style="padding:2px 0"><span style="cursor:pointer">Level</span></div><div style="width:20px;height:20px"></div></div></th></tr></thead><tbody><tr style="background:rgba(195,128,250,0.05)"><td class="" style="cursor:default">2024-03-25</td><td class="clickable" style="cursor:pointer">Deep Impact</td><td class="clickable" style="cursor:pointer">145,455</td><td class="clickable" style="cursor:pointer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td><td class="clickable" style="cursor:pointer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td></tr><tr style="background:rgba(195,128,250,0.15)"><td class="" style="cursor:default">2024-03-14</td><td class="clickable" style="cursor:pointer">Buena Vista</td><td class="clickable" style="cursor:pointer">147,886</td><td class="clickable" style="cursor:pointer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td><td class="clickable" style="cursor:pointer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td></tr><tr style="background:rgba(195,128,250,0.05)"><td class="" style="cursor:default">2024-05-14</td><td class="clickable" style="cursor:pointer">Orfevre</td><td class="clickable" style="cursor:pointer">157,621</td><td class="clickable" style="cursor:pointer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td><td class="clickable" style="cursor:pointer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td></tr><tr style="background:rgba(195,128,250,0.15)"><td class="" style="cursor:default">2024-03-11</td><td class="clickable" style="cursor:pointer">Lord Kanaloa</td><td class="clickable" style="cursor:pointer">85,020</td><td class="clickable" style="cursor:pointer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td><td class="clickable" style="cursor:pointer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td></tr><tr style="background:rgba(195,128,250,0.05)"><td class="" style="cursor:default">2024-03-10</td><td class="clickable" style="cursor:pointer">Almond Eye</td><td class="clickable" style="cursor:pointer">191,526</td><td class="clickable" style="cursor:pointer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td><td class="clickable" style="cursor:pointer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td></tr><tr style="background:rgba(195,128,250,0.15)"><td class="" style="cursor:default">2024-03-06</td><td class="clickable" style="cursor:pointer">Chrono Genesis</td><td class="clickable" style="cursor:pointer">120,473</td><td class="clickable" style="cursor:pointer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td><td class="clickable" style="cursor:pointer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td></tr><tr style="background:rgba(195,128,250,0.05)"><td class="" style="cursor:default">2024-03-23</td><td class="clickable" style="cursor:pointer">Equinox</td><td class="clickable" style="cursor:pointer">221,544</td><td class="clickable" style="cursor:pointer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td><td class="clickable" style="cursor:pointer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td></tr><tr style="background:rgba(195,128,250,0.15)"><td class="" style="cursor:default">2024-05-07</td><td class="clickable" style="cursor:pointer">Do Deuce</td><td class="clickable" style="cursor:pointer">177,587</td><td class="clickable" style="cursor:pointer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td><td class="clickable" style="cursor:pointer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td></tr></tbody><style>
+        table {
+          border-spacing: 0px;
+          border-style: none;
+          border-collapse: collapse;
+          padding: 0px;
+          table-layout: fixed;
+          text-overflow:ellipsis; 
+          overflow:hidden; 
+          white-space:nowrap;
+          box-shadow: 0 0 5px 0 rgba(195,128,250,0.5);
+        }
+        th {
+          border-spacing: 0px;
+          border-style: none;
+          text-overflow:ellipsis; 
+          overflow:hidden; 
+          white-space:nowrap;
+          padding: 8px 10px;
+          fontWeight: 800;
+          color: rgb(135,64,186);
+          text-align: left;
+          font-size: 16px;
+          transition: all 0.3s ease;
+        }
+        td {
+          border-spacing: 0px;
+          color: rgb(135,64,186);
+          border-style: none;
+          text-overflow:ellipsis; 
+          overflow:hidden; 
+          white-space: nowrap;
+          padding: 5px 10px;
+          transition: all 0.3s ease;
+        }
+        .clickable:hover {
+          color: rgb(195,128,250);
+        }
+      </style></table></div><div style="padding:10px"><div class="hs-textarea-wrap" style="width:980px;height:980px;position:relative"><div class="hs-textarea-input-wrap"><div class="hs-textarea-title">code</div><textarea class="hs-textarea slight-scroll" spellCheck="false" disabled="">
+
+import { HSTable } from &#x27;hs-next-components&#x27;;
+
+export default function Sample() {
+  const defaultList = [
+    {id: &#x27;1&#x27;, birthday: &#x27;2024-03-25&#x27;, name: &#x27;Deep Impact&#x27;, price: 145455, phone: loremipsum, level: loremipsum},
+    {id: &#x27;2&#x27;, birthday: &#x27;2024-03-14&#x27;, name: &#x27;Buena Vista&#x27;, price: 147886, phone: loremipsum, level: loremipsum},
+    {id: &#x27;3&#x27;, birthday: &#x27;2024-05-14&#x27;, name: &#x27;Orfevre&#x27;, price: 157621, phone: loremipsum, level: loremipsum},
+    {id: &#x27;4&#x27;, birthday: &#x27;2024-03-11&#x27;, name: &#x27;Lord Kanaloa&#x27;, price: 85020, phone: loremipsum, level: loremipsum},
+    {id: &#x27;5&#x27;, birthday: &#x27;2024-03-10&#x27;, name: &#x27;Almond Eye&#x27;, price: 191526, phone: loremipsum, level: loremipsum},
+    {id: &#x27;6&#x27;, birthday: &#x27;2024-03-06&#x27;, name: &#x27;Chrono Genesis&#x27;, price: 120473, phone: loremipsum, level: loremipsum},
+    {id: &#x27;7&#x27;, birthday: &#x27;2024-03-23&#x27;, name: &#x27;Equinox&#x27;, price: 221544, phone: loremipsum, level: loremipsum},
+    {id: &#x27;8&#x27;, birthday: &#x27;2024-05-07&#x27;, name: &#x27;Do Deuce&#x27;, price: 177587, phone: loremipsum, level: loremipsum}
+  ]
+
+  const [list, setList] = useState(defaultList);
+
+  function sort(sort: any) {
+    if(sort.target === &quot;&quot;) {
+      setList(defaultList);
+    } else {
+      if(sort.direction) {
+        const sorted = list.sort((a:any, b:any) =&gt; b[sort.target] &gt; a[sort.target] ? -1 : a[sort.target] &gt; b[sort.target] ? 1 : 0);
+        setList(sorted);
+      } else {
+        const sorted = list.sort((a:any, b:any) =&gt; a[sort.target] &gt; b[sort.target] ? -1 : b[sort.target] &gt; a[sort.target] ? 1 : 0);
+        setList(sorted);
+      }
+    }
+  }
+
+  return(
+    &lt;HSTable theme={theme} headers={[
+    {
+      raw: &#x27;birthday&#x27;,
+      type: &#x27;string&#x27;,
+      clickable: false,
+      display: &#x27;Birthday&#x27;,
+    },
+    {
+      raw: &#x27;name&#x27;,
+      type: &#x27;string&#x27;,
+      clickable: true,
+      display: &#x27;Name&#x27;,
+    },
+    {
+      raw: &#x27;price&#x27;,
+      type: &#x27;number&#x27;,
+      clickable: true,
+      display: &#x27;Price&#x27;,
+    },
+    {
+      raw: &#x27;phone&#x27;,
+      type: &#x27;string&#x27;,
+      clickable: true,
+      display: &#x27;Phone&#x27;,
+    },
+    {
+      raw: &#x27;level&#x27;,
+      type: &#x27;string&#x27;,
+      clickable: true,
+      display: &#x27;Level&#x27;,
+    },
+  ]} list={list} handleClickData={(_:any, data: string) =&gt; alert(&#x27;you clicked: &#x27;)} 
+  handleSort={sort} width={1000} rowWidths={[150, 150, 100, 600]} loading={false}/&gt; 
+  )
+}
+</textarea></div><style>
+        .hs-textarea-wrap {
+          display: flex;
+          background: transparent;
+          border: 2px groove rgb(243,182,248);
+        }
+        .hs-textarea-input-wrap {
+          flex: 1; 
+          padding: 15px 0 2px 0;
+          position: relative;
+          box-shadow: 0 0 15px 0 rgba(195,128,250,0.3);
+        }
+        .hs-textarea {
+          border: none;
+          width: 100%;
+          height: 100%;
+          resize: none;
+          outline: none;
+          font-size: 12px;
+          color: rgb(135,64,186);
+          padding: 0 5px 0 5px;
+          background: transparent;
+          tab-size: 2;
+        }
+        .hs-textarea-title {
+          position: absolute;
+          color: rgb(167,96,218);
+          font-size: 9px;
+          top: 0;
+          left: 0;
+          padding: 2px 2px 0 2px;
+          width: 100%;
+          height: 10px;
+        }
+
+        .slight-scroll::-webkit-scrollbar-button {
+          height: 0;
+          width: 0;
+        }
+        
+        .slight-scroll::-webkit-scrollbar {
+          height: 13px;
+          overflow: visible;
+          width: 13px;
+        }
+        
+        .slight-scroll::-webkit-scrollbar-track {
+          background-clip: padding-box;
+          border: solid transparent;
+          border-width: 0 0 0 4px
+        }
+        
+        .slight-scroll::-webkit-scrollbar-track:horizontal {
+          border-width: 4px 0 0
+        }
+        
+        .slight-scroll::-webkit-scrollbar-track:hover {
+          background-color: rgba(195,128,250,.05);
+          box-shadow: inset 1px 0 0 rgba(195,128,250,.1)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-track:horizontal:hover {
+          box-shadow: inset 0 1px 0 rgba(195,128,250,.1)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-track:active {
+          background-color: rgba(195,128,250,.05);
+          box-shadow: inset 1px 0 0 rgba(195,128,250,.14),inset -1px 0 0 rgba(195,128,250,.07)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-track:horizontal:active {
+          box-shadow: inset 0 1px 0 rgba(195,128,250,.14),inset 0 -1px 0 rgba(195,128,250,.07)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-thumb {
+          background-color: rgba(195,128,250,.2);
+          background-clip: padding-box;
+          border: solid transparent;
+          border-width: 1px 1px 1px 6px;
+          min-height: 28px;
+          padding: 100px 0 0;
+          box-shadow: inset 1px 1px 0 rgba(195,128,250,.1),inset 0 -1px 0 rgba(195,128,250,.07)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-thumb:horizontal {
+          border-width: 6px 1px 1px;
+          padding: 0 0 0 100px;
+          box-shadow: inset 1px 1px 0 rgba(195,128,250,.1),inset -1px 0 0 rgba(195,128,250,.07)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-thumb:hover {
+          background-color: rgba(195,128,250,.4);
+          box-shadow: inset 1px 1px 1px rgba(195,128,250,.25)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-thumb:active {
+          background-color: rgba(195,128,250,.05);
+          box-shadow: inset 1px 1px 3px rgba(195,128,250,.35)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-corner {
+          background: transparent
+        }
+      </style></div></div><div style="width:1000px;height:200px;display:flex;justify-content:center;align-items:center"><table style="width:1000px"><thead><tr style="background:transparent;border-bottom:1px groove rgb(243,182,248)"><th class="" style="width:150px;cursor:default"><div style="display:flex"><div style="padding:2px 0"><span style="cursor:default">Birthday</span></div><div style="width:20px;height:20px"></div></div></th><th class="" style="width:150px;cursor:default"><div style="display:flex"><div style="padding:2px 0"><span style="cursor:default">Name</span></div><div style="width:20px;height:20px"></div></div></th></tr></thead><tbody><tr><td colSpan="2" style="padding:10px"><div style="width:100%;height:100%;display:flex;justify-content:center;align-items:center"><div class="spinner"><div class="spinner-inner"></div></div><style>
+        .spinner {
+          width: 100px;
+          height: 100px;
+          border-right: 3px solid rgb(243,182,248);
+          border-bottom: 3px solid rgb(243,182,248);
+          border-radius: 50%;
+          display: inline-block;
+          position: relative;
+          box-sizing: border-box;
+          animation: rotation 1.5s linear infinite;
+        }
+        .spinner-inner {
+          box-sizing: border-box;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 62px;
+          height: 62px;
+          border-radius: 50%;
+          border-top: 3px solid;
+          border-color: rgb(135,64,186) transparent;
+        }
+        
+        @keyframes rotation {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        } 
+      </style></div></td></tr></tbody><style>
+        table {
+          border-spacing: 0px;
+          border-style: none;
+          border-collapse: collapse;
+          padding: 0px;
+          table-layout: fixed;
+          text-overflow:ellipsis; 
+          overflow:hidden; 
+          white-space:nowrap;
+          box-shadow: 0 0 5px 0 rgba(195,128,250,0.5);
+        }
+        th {
+          border-spacing: 0px;
+          border-style: none;
+          text-overflow:ellipsis; 
+          overflow:hidden; 
+          white-space:nowrap;
+          padding: 8px 10px;
+          fontWeight: 800;
+          color: rgb(135,64,186);
+          text-align: left;
+          font-size: 16px;
+          transition: all 0.3s ease;
+        }
+        td {
+          border-spacing: 0px;
+          color: rgb(135,64,186);
+          border-style: none;
+          text-overflow:ellipsis; 
+          overflow:hidden; 
+          white-space: nowrap;
+          padding: 5px 10px;
+          transition: all 0.3s ease;
+        }
+        .clickable:hover {
+          color: rgb(195,128,250);
+        }
+      </style></table></div><div style="padding:10px"><div class="hs-textarea-wrap" style="width:980px;height:330px;position:relative"><div class="hs-textarea-input-wrap"><div class="hs-textarea-title">code</div><textarea class="hs-textarea slight-scroll" spellCheck="false" disabled="">
+
+import { HSTable } from &#x27;hs-next-components&#x27;;
+
+export default function Sample() {
+  return(
+    &lt;HSTable theme={theme} headers={[
+    {
+      raw: &#x27;birthday&#x27;,
+      type: &#x27;string&#x27;,
+      clickable: false,
+      display: &#x27;Birthday&#x27;,
+    },
+    {
+      raw: &#x27;name&#x27;,
+      type: &#x27;string&#x27;,
+      clickable: true,
+      display: &#x27;Name&#x27;,
+    }
+  ]} list={list} width={1000} rowWidths={[150, 150, 100, 600]} loading={false}/&gt; 
+  )
+}
+</textarea></div><style>
+        .hs-textarea-wrap {
+          display: flex;
+          background: transparent;
+          border: 2px groove rgb(243,182,248);
+        }
+        .hs-textarea-input-wrap {
+          flex: 1; 
+          padding: 15px 0 2px 0;
+          position: relative;
+          box-shadow: 0 0 15px 0 rgba(195,128,250,0.3);
+        }
+        .hs-textarea {
+          border: none;
+          width: 100%;
+          height: 100%;
+          resize: none;
+          outline: none;
+          font-size: 12px;
+          color: rgb(135,64,186);
+          padding: 0 5px 0 5px;
+          background: transparent;
+          tab-size: 2;
+        }
+        .hs-textarea-title {
+          position: absolute;
+          color: rgb(167,96,218);
+          font-size: 9px;
+          top: 0;
+          left: 0;
+          padding: 2px 2px 0 2px;
+          width: 100%;
+          height: 10px;
+        }
+
+        .slight-scroll::-webkit-scrollbar-button {
+          height: 0;
+          width: 0;
+        }
+        
+        .slight-scroll::-webkit-scrollbar {
+          height: 13px;
+          overflow: visible;
+          width: 13px;
+        }
+        
+        .slight-scroll::-webkit-scrollbar-track {
+          background-clip: padding-box;
+          border: solid transparent;
+          border-width: 0 0 0 4px
+        }
+        
+        .slight-scroll::-webkit-scrollbar-track:horizontal {
+          border-width: 4px 0 0
+        }
+        
+        .slight-scroll::-webkit-scrollbar-track:hover {
+          background-color: rgba(195,128,250,.05);
+          box-shadow: inset 1px 0 0 rgba(195,128,250,.1)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-track:horizontal:hover {
+          box-shadow: inset 0 1px 0 rgba(195,128,250,.1)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-track:active {
+          background-color: rgba(195,128,250,.05);
+          box-shadow: inset 1px 0 0 rgba(195,128,250,.14),inset -1px 0 0 rgba(195,128,250,.07)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-track:horizontal:active {
+          box-shadow: inset 0 1px 0 rgba(195,128,250,.14),inset 0 -1px 0 rgba(195,128,250,.07)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-thumb {
+          background-color: rgba(195,128,250,.2);
+          background-clip: padding-box;
+          border: solid transparent;
+          border-width: 1px 1px 1px 6px;
+          min-height: 28px;
+          padding: 100px 0 0;
+          box-shadow: inset 1px 1px 0 rgba(195,128,250,.1),inset 0 -1px 0 rgba(195,128,250,.07)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-thumb:horizontal {
+          border-width: 6px 1px 1px;
+          padding: 0 0 0 100px;
+          box-shadow: inset 1px 1px 0 rgba(195,128,250,.1),inset -1px 0 0 rgba(195,128,250,.07)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-thumb:hover {
+          background-color: rgba(195,128,250,.4);
+          box-shadow: inset 1px 1px 1px rgba(195,128,250,.25)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-thumb:active {
+          background-color: rgba(195,128,250,.05);
+          box-shadow: inset 1px 1px 3px rgba(195,128,250,.35)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-corner {
+          background: transparent
+        }
+      </style></div></div></div></div><style>
+        .slight-scroll::-webkit-scrollbar-button {
+          height: 0;
+          width: 0;
+        }
+        
+        .slight-scroll::-webkit-scrollbar {
+          height: 12px;
+          overflow: visible;
+          width: 12px;
+        }
+        
+        .slight-scroll::-webkit-scrollbar-track {
+          background-clip: padding-box;
+          border: solid transparent;
+          border-width: 0 0 0 4px
+        }
+        
+        .slight-scroll::-webkit-scrollbar-track:horizontal {
+          border-width: 4px 0 0
+        }
+        
+        .slight-scroll::-webkit-scrollbar-track:hover {
+          background-color: rgba(195,128,250,.05);
+          box-shadow: inset 1px 0 0 rgba(195,128,250,.1)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-track:horizontal:hover {
+          box-shadow: inset 0 1px 0 rgba(195,128,250,.1)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-track:active {
+          background-color: rgba(195,128,250,.05);
+          box-shadow: inset 1px 0 0 rgba(195,128,250,.14),inset -1px 0 0 rgba(195,128,250,.07)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-track:horizontal:active {
+          box-shadow: inset 0 1px 0 rgba(195,128,250,.14),inset 0 -1px 0 rgba(195,128,250,.07)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-thumb {
+          background-color: rgba(195,128,250,.2);
+          background-clip: padding-box;
+          border: solid transparent;
+          border-width: 1px 1px 1px 6px;
+          min-height: 28px;
+          padding: 100px 0 0;
+          box-shadow: inset 1px 1px 0 rgba(195,128,250,.1),inset 0 -1px 0 rgba(195,128,250,.07)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-thumb:horizontal {
+          border-width: 6px 1px 1px;
+          padding: 0 0 0 100px;
+          box-shadow: inset 1px 1px 0 rgba(195,128,250,.1),inset -1px 0 0 rgba(195,128,250,.07)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-thumb:hover {
+          background-color: rgba(195,128,250,.4);
+          box-shadow: inset 1px 1px 1px rgba(195,128,250,.25)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-thumb:active {
+          background-color: rgba(195,128,250,.05);
+          box-shadow: inset 1px 1px 3px rgba(195,128,250,.35)
+        }
+        
+        .slight-scroll::-webkit-scrollbar-corner {
+          background: transparent
+        }
+      </style></div></div></div><script src="/components-showroom/_next/static/chunks/webpack-9a66635e0ebcbac3.js?v=1736666478585" async=""></script><script src="/components-showroom/_next/static/chunks/fd9d1056-2a48348db6e9e5e0.js?v=1736666478585" async=""></script><script src="/components-showroom/_next/static/chunks/596-800aeab03192c083.js?v=1736666478585" async=""></script><script src="/components-showroom/_next/static/chunks/main-app-d9ec4e7880384bc3.js?v=1736666478585" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:HL[\"/components-showroom/_next/static/css/c914d24e71ef522e.css?v=1736666478585\",{\"as\":\"style\"}]\n0:\"$L2\"\n"])</script><script>self.__next_f.push([1,"3:HL[\"/components-showroom/_next/static/css/62363754e11d4720.css?v=1736666478585\",{\"as\":\"style\"}]\n"])</script><script>self.__next_f.push([1,"4:I{\"id\":7948,\"chunks\":[\"272:static/chunks/webpack-9a66635e0ebcbac3.js\",\"971:static/chunks/fd9d1056-2a48348db6e9e5e0.js\",\"596:static/chunks/596-800aeab03192c083.js\"],\"name\":\"default\",\"async\":false}\n6:I{\"id\":6628,\"chunks\":[\"272:static/chunks/webpack-9a66635e0ebcbac3.js\",\"971:static/chunks/fd9d1056-2a48348db6e9e5e0.js\",\"596:static/chunks/596-800aeab03192c083.js\"],\"name\":\"\",\"async\":false}\n7:I{\"id\":7767,\"chunks\":[\"272:static/chunks/webpack-9a66635e0ebcbac3.js\",\"971:static/chunks/fd9d1056-2a48348db6e9e5e0.js\",\"5"])</script><script>self.__next_f.push([1,"96:static/chunks/596-800aeab03192c083.js\"],\"name\":\"default\",\"async\":false}\n8:I{\"id\":7920,\"chunks\":[\"272:static/chunks/webpack-9a66635e0ebcbac3.js\",\"971:static/chunks/fd9d1056-2a48348db6e9e5e0.js\",\"596:static/chunks/596-800aeab03192c083.js\"],\"name\":\"default\",\"async\":false}\na:I{\"id\":4839,\"chunks\":[\"272:static/chunks/webpack-9a66635e0ebcbac3.js\",\"971:static/chunks/fd9d1056-2a48348db6e9e5e0.js\",\"596:static/chunks/596-800aeab03192c083.js\"],\"name\":\"default\",\"async\":false}\nb:I{\"id\":9595,\"chunks\":[\"343:static/chunk"])</script><script>self.__next_f.push([1,"s/343-838489e27021b5ed.js\",\"407:static/chunks/app/table/page-778388f322ae6d06.js\"],\"name\":\"\",\"async\":false}\n"])</script><script>self.__next_f.push([1,"2:[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/components-showroom/_next/static/css/c914d24e71ef522e.css?v=1736666478585\",\"precedence\":\"next_static/css/c914d24e71ef522e.css\"}]],[\"$\",\"$L4\",null,{\"buildId\":\"0_v6ySRg7s3f-N3itIS8P\",\"assetPrefix\":\"/components-showroom\",\"initialCanonicalUrl\":\"/table\",\"initialTree\":[\"\",{\"children\":[\"table\",{\"children\":[\"__PAGE__\",{}]}]},\"$undefined\",\"$undefined\",true],\"initialHead\":\"$L5\",\"globalErrorComponent\":\"$6\",\"children\":[null,[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"children\":[\"$\",\"$L7\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"hasLoading\":false,\"template\":[\"$\",\"$L8\",null,{}],\"templateStyles\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":\"$undefined\",\"childProp\":{\"current\":[\"$\",\"$L7\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"table\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"hasLoading\":false,\"template\":[\"$\",\"$L8\",null,{}],\"templateStyles\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"childProp\":{\"current\":[\"$L9\",[\"$\",\"$La\",null,{\"propsForComponent\":{\"params\":{}},\"Component\":\"$b\"}],null],\"segment\":\"__PAGE__\"},\"styles\":[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/components-showroom/_next/static/css/62363754e11d4720.css?v=1736666478585\",\"precedence\":\"next_static/css/62363754e11d4720.css\"}]]}],\"segment\":\"table\"},\"styles\":[]}]}]}],null]}]]\n"])</script><script>self.__next_f.push([1,"5:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"1\",{\"children\":\"Component Showroom\"}],[\"$\",\"meta\",\"2\",{\"name\":\"description\",\"content\":\"next app\"}],[\"$\",\"meta\",\"3\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"link\",\"4\",{\"rel\":\"icon\",\"href\":\"/components-showroom/favicon.ico\",\"type\":\"image/x-icon\",\"sizes\":\"16x16\"}]]\n9:null\n"])</script></body></html>
